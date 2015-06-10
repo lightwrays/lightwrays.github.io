@@ -1,0 +1,99 @@
+---
+layout: default
+scroll_navigation: true
+---
+	<section id="banner">
+		<div class="inner">
+			<h2>Chris Wray</h2>
+			<p>Building things from bytes.  All sorts of different things.</p>
+			<ul class="actions">
+				<li><a href="{{ site.baseurl }}/blog/" class="button special">Blog</a></li>
+			</ul>
+		</div>
+		<a href="#one" class="more scrolly">More About Me</a>
+	</section>
+	<section id="one" class="wrapper style1 special">
+		<div class="inner">
+			<header class="major">
+				<h2>Software Architect and Engineer</h2>
+				<p>Hello, I'm Chris Wray.  I'm a passionate Software Architect and Engineer with over 17 years of 
+					software development experience building great solutions for many high profile companies. 
+					Check out some of <a href="#three" class="scrolly">my past projects</a>.
+				</p>
+			</header>
+			<ul class="icons major">
+				<li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="#two" class="scrolly icon fa-chevron-down"><span class="label">Recent Posts</span></a></li>
+				<li><h3><a href="#two" class="scrolly icon">Recent Posts</a></a></h3></li>
+				<li><a href="#two" class="scrolly icon fa-chevron-down"><span class="label">Recent Posts</span></a></li>
+			</ul>
+		</div>
+	</section>
+	<section id="two" class="wrapper alt style2">
+		{% for post in site.posts %}
+		{% if post.featured %}
+		<section class="spotlight">
+			<div class="image"><img src="{{ site.baseurl }}/images/{% if post.image %}{{ post.image }}{% else %}pic01.jpg{% endif %}" alt="" /></div><div class="content">
+				<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+				{{ post.excerpt }}
+			</div>
+		</section>
+		{% endif %}
+		{% endfor %}
+	</section>
+	<section id="three" class="wrapper style3 special">
+		<div class="inner">
+			<header class="major">
+				<h2>Projects</h2>
+				<p>I inspire software development professionals to create innovative technology solutions, and can't help building them myself.
+					Here are some examples.
+				</p>
+			</header>
+			<ul class="features">
+				<li class="icon fa-tablet">
+					<h3>Mobile Solutions</h3>
+					<p>Created Apps published in the Apple and Microsoft App Stores for iOS and Windows 8.1 devices.</p>
+				</li>
+				<li class="icon fa-credit-card">
+					<h3>PCI Compliance</h3>
+					<p>Led the architecture for a large PCI Compliance initiative spanning all payment processing within an Online Solution and related Websites and systems.</p>
+				</li>
+				<li class="icon fa-code">
+					<h3>Enterprise Software</h3>
+					<p>Architected an enterprise software solution spanning 4 companies in multiple offices across numerous States from Alaska to Hawaii.
+						Scaled up using Discovery, Distrubuted Caching, an Enterprise Service Bus, and real-time notifications.
+					</p>
+				</li>
+				<li class="icon fa-barcode">
+					<h3>Warehouse Management Solutions</h3>
+					<p>Developed Warehouse Management software involving wireless barcode scanning devices and mobile printers with support for multiple foreign languages.</p>
+				</li>
+				<li class="icon fa-dollar">
+					<h3>E-Commerce Websites</h3>
+					<p>Created multiple large scale E-Commerce Websites and a platform for shared services and content management.</p>
+				</li>
+				<li class="icon fa-laptop">
+					<h3>Online Multiplayer Gaming</h3>
+					<p>Was the Architect for an Online Multiplayer Game serving a large user base, while designing the next phase of the platform
+						using SOA and a Distributed Architecture.
+					</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section id="cta" class="wrapper style4">
+		<div class="inner">
+			<header>
+				<h2>Interested in More?</h2>
+				<p>Learn more <a href="{{ site.baseurl }}/about/">about me</a> and my background, or read my <a href="{{ site.baseurl }}/blog/">blog</a> to follow 
+					my various musings.  I can be reached through various social media outlets below.  
+					Or simply <a href="{{ site.baseurl }}/contact/">contact me</a>, if you wish.</p>
+			</header>
+			<ul class="actions vertical">
+				<li><a href="{{ site.baseurl }}/about/" class="button fit special">About Me</a></li>
+				<li><a href="{{ site.baseurl }}/contact/" class="button fit">Contact Me</a></li>
+			</ul>
+		</div>
+	</section>
