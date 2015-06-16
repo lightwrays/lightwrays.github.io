@@ -12,4 +12,4 @@ After graduating from the [University of Washington](http://www.washington.edu/)
 
 Currently, I am working at [Vertigo](http://vertigo.com) and building amazing mobile and video solutions for high profile clients using the latest technologies and practices.
 
-While I'm not at my workstation creating things, you'll likely find me hanging out with my family in the greater Seattle area, snowboarding, listening to great music, cooking and eating tasty things while documenting everything with my trusty iPhone camera.
+While I'm not at my workstation creating things, you'll likely find me hanging out with my family in the greater Seattle area, snowboarding, listening to great music, cooking and eating tasty things, all while documenting everything with my trusty iPhone camera.
